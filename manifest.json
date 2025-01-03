@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Website Blocker",
+    "version": "1.0",
+    "description": "Block or allow specific websites",
+    "permissions": [
+      "storage",
+      "webNavigation",
+      "webRequest",
+      "webRequestBlocking",
+      "<all_urls>"
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "icons": {
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  }
